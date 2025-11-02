@@ -233,7 +233,7 @@ export default function cvPage() {
                 image={bild}
                 alt="Projektbild"
                 title="Game Jam Projekt"
-                description="Prototyp der für einen Game Jam erstellt wurde. Enthält grundlegen Mechaniken und etwas GLSL ähnlichem Shader Code."
+                description="Prototyp, der für einen Game Jam erstellt wurde. Enthält grundlegende Mechaniken und etwas GLSL ähnlichen Shader Code."
                 content={
                   <div className="flex justify-center items-center w-full h-full">
                     <a
