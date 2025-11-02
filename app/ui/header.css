@@ -1,0 +1,59 @@
+:root {
+  --header-height: 72px;
+}
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: var(--accent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-header__inner {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header__logo {
+  font-size: 1.5rem;
+  color: var(--foreground);
+}
+
+.top-header nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-header nav a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 12px;
+  color: var(--foreground);
+  transition: color 0.2s ease;
+}
+
+.top-header nav a:hover {
+  color: var(--accent);
+}
+
+.top-header nav a.active {
+  color: var(--background);
+}
